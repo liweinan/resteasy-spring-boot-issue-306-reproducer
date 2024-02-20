@@ -43,6 +43,17 @@
 			<artifactId>resteasy-servlet-spring-boot-starter</artifactId>
 			<version>6.1.0.Final</version>
 			<scope>runtime</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.jboss.resteasy.spring</groupId>
+					<artifactId>resteasy-spring</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.jboss.resteasy.spring</groupId>
+			<artifactId>resteasy-spring</artifactId>
+			<version>3.1.2-SNAPSHOT</version>
 		</dependency>
 
 		<!-- below works -->
